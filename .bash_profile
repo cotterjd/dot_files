@@ -18,8 +18,10 @@ pip="/Users/user/Library/Caches/pip"
 ansible="/Library/Frameworks/Python.framework/Versions/3.6/bin"
 go="/usr/local/go/bin"
 cabal="~/.cabal/bin"
+NODE_PATH="/usr/local/lib/node_modules"
+npm_commands="./node_modules/.bin"
 
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 
-export PATH=$localbin:$usrbin:$bin:$usrsbin:$sbin:$links:$my_commands:$gem:$terraform:$python:$pip:$ansible:$go:$cabal
+export PATH=$localbin:$usrbin:$bin:$usrsbin:$sbin:$links:$my_commands:$gem:$terraform:$python:$pip:$ansible:$go:$cabal:$NODE_PATH:$npm_commands
