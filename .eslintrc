@@ -179,7 +179,7 @@
     "operator-assignment": 0,       // require assignment operator shorthand where possible or prohibit it entirely (off by default)
     "padded-blocks": 0,             // enforce padding within blocks (off by default)
     "quote-props": 0,               // require quotes around object literal property names (off by default)
-    "quotes": 0,                    // specify whether double or single quotes should be used
+    "quotes": [1, "backtick"],                    // specify whether double or single quotes should be used
     "semi": 0,                      // require or disallow use of semicolons instead of ASI
     "sort-vars": 0,                 // sort variables within the same declaration block (off by default)
     "space-after-function-name": 0, // require a space after function names (off by default)
@@ -192,6 +192,8 @@
     "space-unary-ops": 0,           // Require or disallow spaces before/after unary operators (words on by default, nonwords off by default)
     "spaced-line-comment": 0,       // require or disallow a space immediately following the // in a line comment (off by default)
     "wrap-regex": 0,                // require regex literals to be wrapped in parentheses (off by default)
+    "no-useless-concat": 1,
+    "prefer-template": 1,
 
 
     ////////// ECMAScript 6 //////////
