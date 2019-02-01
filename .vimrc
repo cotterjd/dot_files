@@ -1,4 +1,5 @@
 set tabstop=2
+set expandtab
 set path+=**
 set wildmenu
 syntax on
