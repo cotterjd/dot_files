@@ -214,6 +214,7 @@
     "no-plusplus": 1,      // disallow use of unary operators, ++ and -- (off by default)
     
     ///////// React //////////
-    "react/react-in-jsx-scope": 2
+    "react/react-in-jsx-scope": 2,
+    "react/prop-types: [1, { "ignore": "length" }]
   }
 }
