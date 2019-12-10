@@ -13,5 +13,4 @@ set cindent shiftwidth=2
 
 autocmd FileType javascript setlocal equalprg=js-beautify\ --stdin\ --indent-size=2 
 
-execute pathogen#infect()
-call pathogen#helptags()
+map <C-o> :NERDTreeToggle<CR>
