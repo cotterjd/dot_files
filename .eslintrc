@@ -215,6 +215,9 @@
     
     ///////// React //////////
     "react/react-in-jsx-scope": 2,
-    "react/prop-types: [1, { "ignore": ["length"], "skipUndeclared": true }]
+    "react/prop-types: [1, { "ignore": ["length"], "skipUndeclared": true }],
+    
+    ///////// Vue //////////
+    "vue/require-valid-default-prop: 2
   }
 }
