@@ -19,7 +19,8 @@ autocmd CursorHold * if (&filetype == 'netrw' && &number == 0) | set relativenum
 
 autocmd FileType javascript setlocal equalprg=js-beautify\ --stdin\ --indent-size=2 
 
-map <C-o> :NERDTreeToggle<CR>
+" NERDTree shortcut
+" map <C-o> :NERDTreeToggle<CR>
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
