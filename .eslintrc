@@ -114,7 +114,7 @@
     "vars-on-top": 0,           // requires to declare all vars on top of their containing scope (off by default)
     "wrap-iife": 0,             // require immediate function invocation to be wrapped in parentheses (off by default)
     "yoda": 0,                  // require or disallow Yoda conditions
-    "no-throw-literal": 1,      // requires Error object be thrown instead of string (i.e., throw new Error('some error')
+    "no-throw-literal": 0,      // requires Error object be thrown instead of string (i.e., throw new Error('some error')
 
 
     ////////// Strict Mode //////////
