@@ -3,6 +3,12 @@ alias mkdir='mkdir -p'
 alias mux='tmuxinator'
 alias path='echo $PATH | tr ":" "\n"'
 alias g='git'
+alias k='tmux kill-session -t'
+alias pm='git pull origin master'
+alias chm='git checkout master && git pull origin master'
+alias push='git push origin $(git branch | grep \* | cut -d " " -f2)'
+alias pull='git pull origin $(git branch | grep \* | cut -d " " -f2)'
+
 
 localbin="/usr/local/bin"
 usrbin="/usr/bin"
