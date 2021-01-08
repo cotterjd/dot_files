@@ -195,6 +195,10 @@
     "wrap-regex": 0,                // require regex literals to be wrapped in parentheses (off by default)
     "no-useless-concat": 1,
     "prefer-template": 1,
+    "padding-line-between-statements": [
+      1,
+      { blankLine: "always", prev: "*", next: "return" }
+    ]
 
 
     ////////// ECMAScript 6 //////////
