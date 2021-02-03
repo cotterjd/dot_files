@@ -2,6 +2,7 @@ set tabstop=2
 set expandtab
 set path+=**
 set wildmenu
+colo desert
 syntax on
 set relativenumber
 set number
