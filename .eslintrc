@@ -133,7 +133,7 @@
     "no-undef": 2,                    // disallow use of undeclared variables unless mentioned in a /*global */ block
     "no-undef-init": 0,               // disallow use of undefined when initializing variables
     "no-undefined": 0,                // disallow use of undefined variable (off by default)
-    "no-unused-vars": [1, { "args": "none" }], // disallow declaration of variables that are not used in the code
+    "no-unused-vars": [1, { "args": "none", "varIgnorePattern": "_|log" }], // disallow declaration of variables that are not used in the code
     "no-use-before-define": [2, {"functions": false}],        // disallow use of variables before they are defined
 
 
