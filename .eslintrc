@@ -199,6 +199,7 @@
       1,
       { blankLine: "always", prev: "*", next: "return" }
     ],
+    "object-curly-spacees: [1, "always", { "objectsInObjects" false }], // bad: {a: b}, good: { a: b }, bad: { a: { x: y } }, good: { a: { x: y }}
 
 
     ////////// ECMAScript 6 //////////
