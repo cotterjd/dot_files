@@ -34,3 +34,9 @@ source /usr/local/share/chruby/auto.sh
 
 export PATH=$localbin:$usrbin:$bin:$usrsbin:$sbin:$links:$my_commands:$gem:$terraform:$python:$pip:$ansible:$go:$cabal:$NODE_PATH:$npm_commands
 export EDITOR=vim
+
+git_branch () {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+export PS1="\w$(git_branch)\$ " # displays folder and branch at prompt
+
