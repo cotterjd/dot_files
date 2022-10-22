@@ -1,12 +1,13 @@
-set list
+set directory=~/.vim/swap # make all swap files go here (directory must exist)
+set list " see tab and space characters
 set tabstop=2
-set expandtab
+set expandtab " turn tabs into spaces
 set path+=**
 set wildmenu
-colo desert
-syntax on
+color desert
+syntax on " sytax highlighting
 set relativenumber
-set number
+set number " line numbers
 set undofile                " Save undo's after file closes
 set undodir=$HOME/.vim/undo " where to save undo histories (make sure directory exists)
 set undolevels=1000         " How many undos
