@@ -1,4 +1,7 @@
-set directory=~/.vim/swap # make all swap files go here (directory must exist)
+if !isdirectory("~/.vim/swap")
+   call mkdir("~/.vim/swap", "p")
+endif
+set directory=~/.vim/swap # make all swap files go here 
 set list " see tab and space characters
 set tabstop=2
 set expandtab " turn tabs into spaces
@@ -8,8 +11,11 @@ color desert
 syntax on " sytax highlighting
 set relativenumber
 set number " line numbers
+if !isdirectory("~/.vim/undo")
+   call mkdir("~/.vim/undo", "p")
+endif
 set undofile                " Save undo's after file closes
-set undodir=$HOME/.vim/undo " where to save undo histories (make sure directory exists)
+set undodir=$HOME/.vim/undo " where to save undo histories 
 set undolevels=1000         " How many undos
 set undoreload=10000        " number of lines to save for undo
 set nowrap "Don't wrap lines
