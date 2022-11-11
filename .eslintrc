@@ -222,6 +222,7 @@
     "react/react-in-jsx-scope": 2,
     "react/prop-types: [1, { "ignore": ["length"], "skipUndeclared": true }],
     "react/jsx-sort-props": 1,
+    "react/jsx-no-duplicate-props": 1,
     
     ///////// Vue //////////
     "vue/require-valid-default-prop": 2,
