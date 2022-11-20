@@ -31,6 +31,7 @@ autocmd FileType javascript setlocal equalprg=js-beautify\ --stdin\ --indent-siz
 
 " NERDTree shortcut
 map <C-o> :NERDTreeToggle<CR>
+let NERDTreeShowBookmarks = 1
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
