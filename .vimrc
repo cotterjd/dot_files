@@ -26,6 +26,9 @@ set foldmethod=indent
 " https://vi.stackexchange.com/questions/7890/how-to-display-line-numbers-in-netrw-v125-vim7-0
 set updatetime=100
 autocmd CursorHold * if (&filetype == 'netrw' && &number == 0) | set relativenumber | endif
+" Autoclose NERDTree if it's the last window
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 
 autocmd FileType javascript setlocal equalprg=js-beautify\ --stdin\ --indent-size=2 
 
