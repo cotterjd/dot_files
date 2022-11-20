@@ -20,6 +20,7 @@ set undolevels=1000         " How many undos
 set undoreload=10000        " number of lines to save for undo
 set nowrap "Don't wrap lines
 set cindent shiftwidth=2
+set foldmethod=indent
 
 " gives relative number lines on netrw (Ex, Ve, Se)
 " https://vi.stackexchange.com/questions/7890/how-to-display-line-numbers-in-netrw-v125-vim7-0
