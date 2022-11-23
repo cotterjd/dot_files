@@ -1,5 +1,5 @@
-if !isdirectory("~/.vim/swap")
-   call mkdir("~/.vim/swap", "p")
+if !isdirectory(expand("$HOME/.vim/swap"))
+   call mkdir(expand("$HOME/.vim/swap"), "p")
 endif
 set directory=~/.vim/swap # make all swap files go here 
 set list " see tab and space characters
@@ -11,8 +11,8 @@ color desert
 syntax on " sytax highlighting
 set relativenumber
 set number " line numbers
-if !isdirectory("~/.vim/undo")
-   call mkdir("~/.vim/undo", "p")
+if !isdirectory(expand("$HOME/.vim/undo"))
+   call mkdir(expand("$HOME/.vim/undo"), "p")
 endif
 set undofile                " Save undo's after file closes
 set undodir=$HOME/.vim/undo " where to save undo histories 
