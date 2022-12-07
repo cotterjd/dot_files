@@ -1,7 +1,7 @@
 if !isdirectory(expand("$HOME/.vim/swap"))
    call mkdir(expand("$HOME/.vim/swap"), "p")
 endif
-set directory=~/.vim/swap # make all swap files go here 
+set directory=~/.vim/swap " make all swap files go here 
 set list " see tab and space characters
 set tabstop=2
 set expandtab " turn tabs into spaces
