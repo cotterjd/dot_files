@@ -36,7 +36,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 autocmd FileType javascript setlocal equalprg=js-beautify\ --stdin\ --indent-size=2 
 
 " NERDTree shortcut
-map <C-o> :NERDTreeToggle<CR>
 let NERDTreeShowBookmarks = 1
 
 set statusline+=%#warningmsg#
@@ -58,3 +57,8 @@ let g:ale_sign_error = '❌'
 let g:ale_sign_warning = '⚠️'
 let g:ale_fix_on_save = 1
 let g:ale_set_quickfix = 1 " allows :copen when cursor is on TS error to show full error in quickfix window
+
+" mapping
+map <C-o> :NERDTreeToggle<CR>
+map <leader>g :ALEGoToDefinition<CR>
+map <leader>f :Files<CR>
