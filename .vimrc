@@ -4,6 +4,7 @@ endif
 set directory=~/.vim/swap " make all swap files go here 
 set ignorecase
 set list " see tab and space characters
+set laststatus=2 " will always show current file name
 set tabstop=2
 set expandtab " turn tabs into spaces
 set path+=**
