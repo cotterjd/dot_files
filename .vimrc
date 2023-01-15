@@ -85,3 +85,4 @@ map <C-o> :NERDTreeToggle<CR>
 map <leader>g :ALEGoToDefinition<CR>
 map <leader>f :Files<CR>
 map <leader>t :TabooOpen
+map <leader>l :!lazygit<CR>
