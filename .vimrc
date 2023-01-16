@@ -83,6 +83,6 @@ let g:ale_set_quickfix = 1 " allows :copen when cursor is on TS error to show fu
 " mapping
 map <C-o> :NERDTreeToggle<CR>
 map <leader>g :ALEGoToDefinition<CR>
-map <leader>f :Files<CR>
+map <leader>f :GFiles<CR>
 map <leader>t :TabooOpen
 map <leader>l :!lazygit<CR>
