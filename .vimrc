@@ -81,9 +81,11 @@ let g:ale_fix_on_save = 1
 let g:ale_set_quickfix = 1 " allows :copen when cursor is on TS error to show full error in quickfix window
 
 " mapping
+set mapleader "\<SPACE>"
 map <C-o> :NERDTreeToggle<CR>
-map <leader>g :ALEGoToDefinition<CR>
-map <leader>f :GFiles<CR>
-map <leader>t :TabooOpen
-map <leader>l :!lazygit<CR>
-map <leader>c :color 
+map <leader>g :ALEGoToDefinition<CR> " g for 'go'
+map <leader>f :GFiles<CR> " f for 'files'
+map <leader>t :TabooOpen " t for 'tab'
+map <leader>l :!lazygit<CR> " l for 'lazy'
+map <leader>c :set nolist nonumber norelativenumber<CR> " c for 'clear' or 'copy'. This command will clear numbers and special characters so you can copy just the code
+map <leader>b :set list number relativenumber<CR> " b for 'back'. Goes back to original config after copying code
