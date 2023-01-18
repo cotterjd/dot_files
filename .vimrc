@@ -34,7 +34,7 @@ set tabstop=2
 set expandtab " turn tabs into spaces
 set path+=**
 set wildmenu
-color pablo
+color desert
 syntax on " sytax highlighting
 set relativenumber
 set number " line numbers
@@ -86,3 +86,4 @@ map <leader>g :ALEGoToDefinition<CR>
 map <leader>f :GFiles<CR>
 map <leader>t :TabooOpen
 map <leader>l :!lazygit<CR>
+map <leader>c :color 
