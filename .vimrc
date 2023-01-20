@@ -54,19 +54,10 @@ autocmd CursorHold * if (&filetype == 'netrw' && &number == 0) | set relativenum
 " Autoclose NERDTree if it's the last window
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-
 autocmd FileType javascript setlocal equalprg=js-beautify\ --stdin\ --indent-size=2 
 
 " NERDTree shortcut
 let NERDTreeShowBookmarks = 1
-
-set statusline+=%#warningmsg#
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
 
 execute pathogen#infect()
 
@@ -81,7 +72,7 @@ let g:ale_fix_on_save = 1
 let g:ale_set_quickfix = 1 " allows :copen when cursor is on TS error to show full error in quickfix window
 
 " mapping
-set mapleader "\<SPACE>"
+set mapleader = "\<SPACE>"
 map <C-o> :NERDTreeToggle<CR>
 map <leader>g :ALEGoToDefinition<CR> " g for 'go'
 map <leader>f :GFiles<CR> " f for 'files'
