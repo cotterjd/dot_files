@@ -1,3 +1,5 @@
+alias vb='vim ~/.bash_profile'
+alias sb='source ~/.bash_profile'
 alias l='ls -aG'
 alias mkdir='mkdir -p'
 alias mux='tmuxinator'
