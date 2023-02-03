@@ -80,5 +80,9 @@ map <leader>t :TabooOpen " t for 'tab'
 map <leader>l :!lazygit<CR> " l for 'lazy'
 map <leader>c :set nolist nonumber norelativenumber<CR> " c for 'clear' or 'copy'. This command will clear numbers and special characters so you can copy just the code
 map <leader>b :set list number relativenumber<CR> " b for 'back'. Goes back to original config after copying code
-map <leader>- <C-w>< " decrease window size (to increase a window just switch to the other window and do same command)
-map <leader>r :source ~/.vimrc<CR> " r for 'reload' or 'rc'
+map <leader>- <C-w>< " decrease window size
+map <leader>= <C-w>< " increase window size 
+map <leader>r :source ~/.vimrc<CR> " r for 'reload' or 'rcmap <leader>L :diffg L<CR> " L for 'LOCAL'
+map <leader>R :diffg R<CR> " R for 'REMOTE'
+map <leader>C :wqa <CR> " C for 'close'
+
