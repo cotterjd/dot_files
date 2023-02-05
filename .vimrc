@@ -78,4 +78,4 @@ map <leader>C :wqa <CR> " C for 'close'
 " PLUGINS (clone into ~/.vim/pack/plugins/start)
 " git@github.com:preservim/nerdtree.git :NERDTree
 " git@github.com:vim-test/vim-test.git :TestNearest
-" git@github.com:dense-analysis/ale.git :ALEGoToDefinition
+" git@github.com:dense-analysis/ale.git :ALEGoToDefinition :ALEFindReferences (works out of the box for TS)
