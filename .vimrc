@@ -65,6 +65,16 @@ map <leader>r :source ~/.vimrc<CR> " r for 'reload' or 'rcmap <leader>L :diffg L
 map <leader>R :diffg R<CR> " R for 'REMOTE'
 map <leader>C :wqa <CR> " C for 'close'
 
+" vimdiff
+" git config --global diff.tool vimdiff
+" git config --global difftool.prompt false
+" 'git difftool' will open diffs in vimdiff
+
+" make vimdiff mergetool
+" git config --global merge.tool vimdiff
+" git config --global merge.conflictstyle diff3
+" git config --global mergetool.prompt false
+
 " PLUGINS (clone into ~/.vim/pack/plugins/start)
 " git@github.com:preservim/nerdtree.git :NERDTree
 " git@github.com:vim-test/vim-test.git :TestNearest
