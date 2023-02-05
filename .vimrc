@@ -86,3 +86,6 @@ map <leader>r :source ~/.vimrc<CR> " r for 'reload' or 'rcmap <leader>L :diffg L
 map <leader>R :diffg R<CR> " R for 'REMOTE'
 map <leader>C :wqa <CR> " C for 'close'
 
+" PLUGINS (clone into ~/.vim/pack/plugins/start)
+" git@github.com:preservim/nerdtree.git :NERDTree
+" git@github.com:vim-test/vim-test.git :TestNearest
