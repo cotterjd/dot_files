@@ -89,4 +89,4 @@ map <leader>C :wqa <CR> " C for 'close'
 " PLUGINS (clone into ~/.vim/pack/plugins/start)
 " git@github.com:preservim/nerdtree.git :NERDTree
 " git@github.com:vim-test/vim-test.git :TestNearest
-" https://github.com/dense-analysis/ale
+" https://github.com/dense-analysis/ale :ALEGoToDefinition
