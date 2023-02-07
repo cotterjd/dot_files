@@ -78,4 +78,5 @@ map <leader>C :wqa <CR> " C for 'close'
 " PLUGINS (clone into ~/.vim/pack/plugins/start)
 " git@github.com:preservim/nerdtree.git :NERDTree
 " git@github.com:vim-test/vim-test.git :TestNearest
-" git@github.com:dense-analysis/ale.git :ALEGoToDefinition :ALEFindReferences (works out of the box for TS)
+" git@github.com:dense-analysis/ale.git :ALEGoToDefinition (works out of the box for TS)
+" git@github.com:mileszs/ack.vim.git :Ack mySearchString
