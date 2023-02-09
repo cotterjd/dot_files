@@ -80,3 +80,4 @@ map <leader>C :wqa <CR> " C for 'close'
 " git@github.com:vim-test/vim-test.git :TestNearest
 " git@github.com:dense-analysis/ale.git :ALEGoToDefinition (works out of the box for TS)
 " git@github.com:mileszs/ack.vim.git :Ack mySearchString
+" git@github.com:tpope/vim-fugitive.git :G blame
