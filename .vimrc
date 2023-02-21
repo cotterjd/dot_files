@@ -6,6 +6,7 @@ if !isdirectory(expand("$HOME/.vim/undo"))
    call mkdir(expand("$HOME/.vim/undo"), "p")
 endif
 
+set rtp+=~/.fzf " for fzf-vim
 " vim settings
 set directory=~/.vim/swap " make all swap files go here 
 set ignorecase
@@ -82,3 +83,4 @@ map <leader>C :wqa <CR> " C for 'close'
 " git@github.com:mileszs/ack.vim.git :Ack mySearchString
 " git@github.com:tpope/vim-fugitive.git :G blame
 " git@github.com:github/copilot.vim.git (needs Vim 9)
+" git@github.com:junegunn/fzf.vim.git :GFiles (need fzf installed as well)
