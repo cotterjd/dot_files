@@ -50,6 +50,8 @@ let g:ale_sign_error = '❌'
 let g:ale_sign_warning = '⚠️'
 let g:ale_fix_on_save = 1
 let g:ale_set_quickfix = 1 " allows :copen when cursor is on TS error to show full error in quickfix window
+let g:ale_completion_enabled = 1
+let g:ale_go_to_definition = 1
 
 " mapping
 set mapleader = "\<SPACE>"
