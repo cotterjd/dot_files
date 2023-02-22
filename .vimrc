@@ -58,6 +58,8 @@ set mapleader = "\<SPACE>"
 map <C-o> :NERDTreeToggle<CR>
 map <leader>g :ALEGoToDefinition<CR> " g for 'go'
 map <leader>f :GFiles<CR> " f for 'files'
+map <leader>fs :Se \| GFiles " fs for 'files Se'
+map <leader>fv: Ve \| GFiles " fv for 'files Ve'
 map <leader>t :TabooOpen " t for 'tab'
 map <leader>l :!lazygit<CR> " l for 'lazy'
 map <leader>c :set nolist nonumber norelativenumber<CR> " c for 'clear' or 'copy'. This command will clear numbers and special characters so you can copy just the code
@@ -67,6 +69,7 @@ map <leader>= <C-w>> " increase window size
 map <leader>r :source ~/.vimrc<CR> " r for 'reload' or 'rcmap <leader>L :diffg L<CR> " L for 'LOCAL'
 map <leader>R :diffg R<CR> " R for 'REMOTE'
 map <leader>C :wqa <CR> " C for 'close'
+map <leader>v :e ~/.vimrc<CR> " v for 'vimrc'
 
 " vimdiff
 " git config --global diff.tool vimdiff
