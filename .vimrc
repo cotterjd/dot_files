@@ -89,3 +89,4 @@ map <leader>v :e ~/.vimrc<CR> " v for 'vimrc'
 " git@github.com:tpope/vim-fugitive.git :G blame
 " git@github.com:github/copilot.vim.git (needs Vim 9)
 " git@github.com:junegunn/fzf.vim.git :GFiles (need fzf installed as well)
+" git@github.com:preservim/nerdcommenter.git <leader>cc
