@@ -70,6 +70,8 @@ map <leader>r :source ~/.vimrc<CR> " r for 'reload' or 'rcmap <leader>L :diffg L
 map <leader>R :diffg R<CR> " R for 'REMOTE'
 map <leader>C :wqa <CR> " C for 'close'
 map <leader>v :e ~/.vimrc<CR> " v for 'vimrc'
+map <leader>sa :let g:ale_set_quickfix = 0<CR> " stops ALE from using quickfix window when trying to use it for Ack sa for 'stop ale'
+map <leader>B :Git blame<CR> " B for 'blame'
 
 " vimdiff
 " git config --global diff.tool vimdiff
@@ -89,4 +91,4 @@ map <leader>v :e ~/.vimrc<CR> " v for 'vimrc'
 " git@github.com:tpope/vim-fugitive.git :G blame
 " git@github.com:github/copilot.vim.git (needs Vim 9)
 " git@github.com:junegunn/fzf.vim.git :GFiles (need fzf installed as well)
-" git@github.com:preservim/nerdcommenter.git <leader>c<SPACE>
+" git@github.com:gcmt/taboo.vim.git TabooOpen <tabname>
