@@ -93,3 +93,4 @@ map <leader>B :Git blame<CR> " B for 'blame'
 " git@github.com:junegunn/fzf.vim.git :GFiles (need fzf installed as well)
 " git@github.com:gcmt/taboo.vim.git TabooOpen <tabname>
 " https://raw.githubusercontent.com/vim-scripts/ScrollColors/master/plugin/ScrollColor.vim source this file then :SCROLL then use arrow keys
+" git@github.com:vim-airline/vim-airline (nice status bar)
