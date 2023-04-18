@@ -8,6 +8,7 @@ endif
 
 set rtp+=~/.fzf " for fzf-vim
 " vim settings
+set colorcolumn=100 " like "rulers": [100] in vscode
 set directory=~/.vim/swap " make all swap files go here 
 set ignorecase
 set list " see tab and space characters
