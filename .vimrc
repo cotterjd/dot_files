@@ -73,6 +73,7 @@ map <leader>C :wqa <CR> " C for 'close'
 map <leader>v :e ~/.vimrc<CR> " v for 'vimrc'
 map <leader>sa :let g:ale_set_quickfix = 0<CR> " stops ALE from using quickfix window when trying to use it for Ack sa for 'stop ale'
 map <leader>B :Git blame<CR> " B for 'blame'
+map <leader>s :Ack --ignore-file=match:.js  " s for 'search' will ignore build files
 
 " vimdiff
 " git config --global diff.tool vimdiff
