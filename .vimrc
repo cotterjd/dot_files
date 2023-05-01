@@ -90,7 +90,7 @@ map <leader>s :Ack --ignore-file=match:.js  " s for 'search' will ignore build f
 " git@github.com:vim-test/vim-test.git :TestNearest
 " git@github.com:dense-analysis/ale.git :ALEGoToDefinition (works out of the box for TS)
 " git@github.com:mileszs/ack.vim.git :Ack mySearchString (requires 'sudo apt install ack')
-" git@github.com:tpope/vim-fugitive.git :G blame
+" git@github.com:tpope/vim-fugitive.git :Git blame
 " git@github.com:github/copilot.vim.git (needs Vim 9)
 " git@github.com:junegunn/fzf.vim.git :GFiles (need fzf installed as well)
 " git@github.com:gcmt/taboo.vim.git TabooOpen <tabname>
