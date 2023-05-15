@@ -1,3 +1,10 @@
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+" :PlugInstall
+call plug#begin()                                                                                                                                                                        
+Plug 'tpope/vim-fugitive'                                                                                                                                                                                                                                                                                                                            
+call plug#end()                                                                                                                                                                                   
+
 " check for needed folders
 if !isdirectory(expand("$HOME/.vim/swap"))
    call mkdir(expand("$HOME/.vim/swap"), "p")
@@ -5,6 +12,13 @@ endif
 if !isdirectory(expand("$HOME/.vim/undo"))
    call mkdir(expand("$HOME/.vim/undo"), "p")
 endif
+if executable('fzf')                                                                                                                                                                     
+  " Use the existing fzf binary if it is installed                                                                                                                                       
+  let g:fzf_binary = 'fzf'                                                                                                                                                               
+else                                                                                                                                                                                     
+  " Otherwise, install the fzf binary                                                                                                                                                    
+  call fzf#install()                                                                                                                                                                     
+endif  
 
 set rtp+=~/.fzf " for fzf-vim
 " vim settings
