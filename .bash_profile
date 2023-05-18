@@ -39,6 +39,11 @@ source /usr/local/share/chruby/auto.sh
 
 /usr/bin/setxkbmap -option "ctrl:nocaps" # map ctrl to capslock in manjaro
 
+function get() {                                                                                                                                                                         
+  branchName=$1                                                                                                                                                                          
+  git fetch origin $branchName && git checkout $branchName                                                                                                                               
+} 
+
 export PATH=$localbin:$usrbin:$bin:$usrsbin:$sbin:$links:$my_commands:$gem:$terraform:$python:$pip:$ansible:$go:$cabal:$NODE_PATH:$npm_commands
 export EDITOR=vim
 
