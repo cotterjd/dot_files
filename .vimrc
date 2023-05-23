@@ -108,4 +108,5 @@ map <leader>s :Ack --ignore-file=match:.js  " s for 'search' will ignore build f
 " git@github.com:github/copilot.vim.git (needs Vim 9)
 " git@github.com:junegunn/fzf.vim.git :GFiles (need fzf installed as well)
 " git@github.com:gcmt/taboo.vim.git TabooOpen <tabname>
+" git@github.com:prettier/vim-prettier.git 
 " https://raw.githubusercontent.com/vim-scripts/ScrollColors/master/plugin/ScrollColor.vim source this file then :SCROLL then use arrow keys
