@@ -31,6 +31,7 @@ set tabstop=2
 set expandtab " turn tabs into spaces
 set path+=**
 set wildmenu
+set t_Co=256
 color desert " or pablo
 syntax on " sytax highlighting
 set relativenumber
