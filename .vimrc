@@ -71,7 +71,8 @@ let g:ale_go_to_definition = 1
 
 " mapping
 set mapleader = "\<SPACE>"
-map <C-o> :NERDTreeToggle<CR>
+map <leader>n :NERDTreeToggle<CR>
+map <leader>N :NERDTreeFind<CR> " open tree focused on file
 map <leader>g :ALEGoToDefinition<CR> " g for 'go'
 map <leader>f :GFiles<CR> " f for 'files'
 map <leader>fs :Se \| GFiles " fs for 'files Se'
