@@ -44,6 +44,7 @@ set nowrap "Don't wrap lines
 set cindent shiftwidth=2
 set foldmethod=indent
 set hlsearch " highlights matches when using / or ?
+set incsearch " search as you type
 
 " gives relative number lines on netrw (Ex, Ve, Se)
 " https://vi.stackexchange.com/questions/7890/how-to-display-line-numbers-in-netrw-v125-vim7-0
@@ -57,17 +58,20 @@ autocmd FileType javascript setlocal equalprg=js-beautify\ --stdin\ --indent-siz
 " NERDTree shortcut
 let NERDTreeShowBookmarks = 1
 
+" ALE settings
 " for eslint enforcement https://github.com/dense-analysis/ale
 let g:ale_fixers = {
  \ 'javascript': ['eslint']
  \ }
-
 let g:ale_sign_error = '❌'
 let g:ale_sign_warning = '⚠️'
 let g:ale_fix_on_save = 1
 let g:ale_set_quickfix = 1 " allows :copen when cursor is on TS error to show full error in quickfix window
 let g:ale_completion_enabled = 1
 let g:ale_go_to_definition = 1
+
+" buftabline settings
+let g:buftabline_numbers = 1
 
 " mapping
 set mapleader = "\<SPACE>"
@@ -111,4 +115,4 @@ map <leader>s :Ack --ignore-file=match:.js  " s for 'search' will ignore build f
 " git@github.com:junegunn/fzf.vim.git :GFiles (need fzf installed as well)
 " git@github.com:gcmt/taboo.vim.git TabooOpen <tabname>
 " git@github.com:prettier/vim-prettier.git 
-" https://raw.githubusercontent.com/vim-scripts/ScrollColors/master/plugin/ScrollColor.vim source this file then :SCROLL then use arrow keys
+" https://github.com/ap/vim-buftabline
