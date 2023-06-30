@@ -70,6 +70,10 @@ let g:ale_set_quickfix = 1 " allows :copen when cursor is on TS error to show fu
 let g:ale_completion_enabled = 1
 let g:ale_go_to_definition = 1
 
+" vim-prettier settings                                                                                                                                                                  
+let g:prettier#autoformat = 1                                                                                                                                                            
+let g:prettier#autoformat_require_pragma = 0    
+
 " buftabline settings
 let g:buftabline_numbers = 1
 
