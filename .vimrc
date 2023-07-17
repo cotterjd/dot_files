@@ -6,6 +6,9 @@ Plug 'tpope/vim-fugitive'
 call plug#end()                                                                                                                                                                                   
 
 " check for needed folders
+if !isdirectory(expand("$HOME/.vim"))                                                                                                                                                    
+   call mkdir(expand("$HOME/.vim"))                                                                                                                                                      
+endif       
 if !isdirectory(expand("$HOME/.vim/swap"))
    call mkdir(expand("$HOME/.vim/swap"), "p")
 endif
@@ -21,6 +24,7 @@ else
 endif  
 
 set rtp+=~/.fzf " for fzf-vim
+
 " vim settings
 set colorcolumn=100 " like "rulers": [100] in vscode
 set directory=~/.vim/swap " make all swap files go here 
@@ -82,6 +86,8 @@ set mapleader = "\<SPACE>"
 map <leader>n :NERDTreeToggle<CR>
 map <leader>N :NERDTreeFind<CR> " open tree focused on file
 map <leader>g :ALEGoToDefinition<CR> " g for 'go'
+map <leader>gh :ALEGoToDefinition \| Se <CR> " g for 'go'                                                                                                                                
+map <leader>gv :ALEGoToDefinition \| Ve<CR> " g for 'go'      
 map <leader>f :GFiles<CR> " f for 'files'
 map <leader>fs :Se \| GFiles " fs for 'files Se'
 map <leader>fv: Ve \| GFiles " fv for 'files Ve'
@@ -98,6 +104,7 @@ map <leader>v :e ~/.vimrc<CR> " v for 'vimrc'
 map <leader>sa :let g:ale_set_quickfix = 0<CR> " stops ALE from using quickfix window when trying to use it for Ack sa for 'stop ale'
 map <leader>B :Git blame<CR> " B for 'blame'
 map <leader>s :Ack --ignore-file=match:.js  " s for 'search' will ignore build files
+map <leader>pc "+p " pc for 'paste clipboard'   
 
 " vimdiff
 " git config --global diff.tool vimdiff
