@@ -233,6 +233,7 @@
     "vue-scoped-css/require-scoped": 2,
 
     ////////// Typescript ////////
-    "@typescript-eslint/no-var-requires: 0
+    "@typescript-eslint/no-var-requires: 0,
+    "@typesript-eslint/no-empty-functions: 0
   }
 }
