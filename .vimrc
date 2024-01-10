@@ -105,6 +105,7 @@ nnoremap <leader>sa :let g:ale_set_quickfix = 0<CR> " stops ALE from using quick
 nnoremap <leader>B :Git blame<CR> " B for 'blame'
 nnoremap <leader>s :Ack --ignore-file=match:.js  " s for 'search' will ignore build files
 nnoremap <leader>p "+p " pc for 'paste clipboard'  
+nnoremap <leader>nc :/<<<<<<< HEAD<CR> " nc for 'next conflict' 
 
 " vimdiff
 " git config --global diff.tool vimdiff
