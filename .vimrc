@@ -105,7 +105,7 @@ map <leader>sa :let g:ale_set_quickfix = 0<CR> " stops ALE from using quickfix w
 map <leader>B :Git blame<CR> " B for 'blame'
 map <leader>s :Ack --ignore-file=match:.js  " s for 'search' will ignore build files
 map <leader>pc "+p " pc for 'paste clipboard'  
-map <leader>nc :/====<CR> " nc for 'next conflict' used in the vimdiff mergetool to quickly navigate to next conflict in the file
+map <leader>nc :/<<<<<<<< HEAD<CR> " nc for 'next conflict' used in the vimdiff mergetool to quickly navigate to next conflict in the file
 
 " vimdiff
 " git config --global diff.tool vimdiff
