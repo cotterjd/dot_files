@@ -83,30 +83,30 @@ let g:buftabline_numbers = 1
 
 " mapping
 set mapleader = "\<SPACE>"
-map <leader>n :NERDTreeToggle<CR>
-map <leader>N :NERDTreeFind<CR> " open tree focused on file
-map <leader>g :ALEGoToDefinition<CR> " g for 'go'
-map <leader>gh :ALEGoToDefinition \| Se <CR> " g for 'go'                                                                                                                                
-map <leader>gv :ALEGoToDefinition \| Ve<CR> " g for 'go'      
-map <leader>f :GFiles<CR> " f for 'files'
-map <leader>fs :Se \| GFiles " fs for 'files Se'
-map <leader>fv: Ve \| GFiles " fv for 'files Ve'
-map <leader>t :TabooOpen " t for 'tab'
-map <leader>l :!lazygit<CR> " l for 'lazy'
-map <leader>c :set nolist nonumber norelativenumber<CR> " c for 'clear' or 'copy'. This command will clear numbers and special characters so you can copy just the code
-map <leader>b :set list number relativenumber<CR> " b for 'back'. Goes back to original config after copying code
-map <leader>- 10<C-w>< " decrease window size
-map <leader>= 10<C-w>> " increase window size 
-map <leader>r :source ~/.vimrc<CR> " r for 'reload' or 'rcmap <leader>L :diffg L<CR> " L for 'LOCAL'
-map <leader>R :diffg R<CR> " R for 'REMOTE'
-map <leader>C :wqa <CR> " C for 'close'
-map <leader>v :e ~/.vimrc<CR> " v for 'vimrc'
-map <leader>sa :let g:ale_set_quickfix = 0<CR> " stops ALE from using quickfix window when trying to use it for Ack sa for 'stop ale'
-map <leader>B :Git blame<CR> " B for 'blame'
-map <leader>s :Ack --ignore-file=match:.js  " s for 'search' will ignore build files
-map <leader>pc "+p " pc for 'paste clipboard'  
-map <leader>nc :/<<<<<<< HEAD<CR> " nc for 'next conflict' used in the vimdiff mergetool to navigate to the next conflict in the file
-map <leader>pc :?<<<<<<< HEAD<CR> " pc for 'previous conflict' used in the vimdiff mergetool to navigate to the previous conflict in the file
+nnoremap <leader>n :NERDTreeToggle<CR>
+nnoremap <leader>N :NERDTreeFind<CR> " open tree focused on file
+nnoremap <leader>g :ALEGoToDefinition<CR> " g for 'go'
+nnoremap <leader>gh :ALEGoToDefinition \| Se <CR> " g for 'go'                                                                                                                                
+nnoremap <leader>gv :ALEGoToDefinition \| Ve<CR> " g for 'go'      
+nnoremap <leader>f :GFiles<CR> " f for 'files'
+nnoremap <leader>fs :Se \| GFiles " fs for 'files Se'
+nnoremap <leader>fv: Ve \| GFiles " fv for 'files Ve'
+nnoremap <leader>t :TabooOpen " t for 'tab'
+nnoremap <leader>l :!lazygit<CR> " l for 'lazy'
+nnoremap <leader>c :set nolist nonumber norelativenumber<CR> " c for 'clear' or 'copy'. This command will clear numbers and special characters so you can copy just the code
+nnoremap <leader>b :set list number relativenumber<CR> " b for 'back'. Goes back to original config after copying code
+nnoremap <leader>- 10<C-w>< " decrease window size
+nnoremap <leader>= 10<C-w>> " increase window size 
+nnoremap <leader>r :source ~/.vimrc<CR> " r for 'reload' or 'rcmap <leader>L :diffg L<CR> " L for 'LOCAL'
+nnoremap <leader>R :diffg R<CR> " R for 'REMOTE'
+nnoremap <leader>C :wqa <CR> " C for 'close'
+nnoremap <leader>v :e ~/.vimrc<CR> " v for 'vimrc'
+nnoremap <leader>sa :let g:ale_set_quickfix = 0<CR> " stops ALE from using quickfix window when trying to use it for Ack sa for 'stop ale'
+nnoremap <leader>B :Git blame<CR> " B for 'blame'
+nnoremap <leader>s :Ack --ignore-file=match:.js  " s for 'search' will ignore build files
+nnoremap <leader>pc "+p " pc for 'paste clipboard'  
+nnoremap <leader>nc :/<<<<<<< HEAD<CR> " nc for 'next conflict' used in the vimdiff mergetool to navigate to the next conflict in the file
+nnoremap <leader>pc :?<<<<<<< HEAD<CR> " pc for 'previous conflict' used in the vimdiff mergetool to navigate to the previous conflict in the file
 
 " vimdiff
 " git config --global diff.tool vimdiff
