@@ -104,7 +104,8 @@ nnoremap <leader>v :e ~/.vimrc<CR> " v for 'vimrc'
 nnoremap <leader>sa :let g:ale_set_quickfix = 0<CR> " stops ALE from using quickfix window when trying to use it for Ack sa for 'stop ale'
 nnoremap <leader>B :Git blame<CR> " B for 'blame'
 nnoremap <leader>s :Ack --ignore-file=match:.js  " s for 'search' will ignore build files
-nnoremap <leader>p "+p " pc for 'paste clipboard'  
+nnoremap <leader>p "+p " pc for 'paste clipboard'
+vnoremap <leader>pr "0p " pr for 'paste recent'
 nnoremap <leader>nc :/<<<<<<< HEAD<CR> " nc for 'next conflict' 
 
 " vimdiff
