@@ -83,7 +83,7 @@ let g:buftabline_numbers = 1
 
 " mapping
 set mapleader = "\<SPACE>"
-nnoremap <leader>n :NERDTreeToggle<CR>
+nnoremap <leader>n :NERDTreeToggle<CR>:set relativenumber<CR>
 nnoremap <leader>N :NERDTreeFind<CR> " open tree focused on file
 nnoremap <leader>g :ALEGoToDefinition<CR> " g for 'go'
 nnoremap <leader>gh :ALEGoToDefinition \| Se <CR> " g for 'go'                                                                                                                                
