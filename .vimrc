@@ -128,4 +128,4 @@ nnoremap <leader>nc :/<<<<<<< HEAD<CR> " nc for 'next conflict'
 " git@github.com:junegunn/fzf.vim.git :GFiles (need fzf installed as well)
 " git@github.com:gcmt/taboo.vim.git TabooOpen <tabname>
 " git@github.com:prettier/vim-prettier.git 
-" https://github.com/ap/vim-buftabline opens buffers in tabs automatically. Can just use standard buffer commands with it. :b3 to got to buffer 3, :db3 to delete buffer 3, :bn and :bp to navigate tabs
+" git@github.com/ap/vim-buftabline opens buffers in tabs automatically. Can just use standard buffer commands with it. :b3 to got to buffer 3, :db3 to delete buffer 3, :bn and :bp to navigate tabs
