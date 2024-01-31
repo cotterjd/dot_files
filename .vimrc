@@ -97,6 +97,8 @@ nnoremap <leader>c :set nolist nonumber norelativenumber<CR> " c for 'clear' or 
 nnoremap <leader>b :set list number relativenumber<CR> " b for 'back'. Goes back to original config after copying code
 nnoremap <leader>- 10<C-w>< " decrease window size
 nnoremap <leader>= 10<C-w>> " increase window size 
+nnoremap <leader>h- 10<C-w>< " decrease horizontal window size
+nnoremap <leaderh= 10<C-w>> " increase horizonal window size 
 nnoremap <leader>r :source ~/.vimrc<CR> " r for 'reload' or 'rcmap <leader>L :diffg L<CR> " L for 'LOCAL'
 nnoremap <leader>R :diffg R<CR> " R for 'REMOTE'
 nnoremap <leader>C :wqa <CR> " C for 'close'
@@ -107,6 +109,26 @@ nnoremap <leader>s :Ack --ignore-file=match:.js  " s for 'search' will ignore bu
 nnoremap <leader>p "+p " pc for 'paste clipboard'
 vnoremap <leader>pr "0p " pr for 'paste recent'
 nnoremap <leader>nc :/<<<<<<< HEAD<CR> " nc for 'next conflict' 
+
+" Go to buffer in *position* X, not go to buffer X                                                                                                                                       
+nnoremap <leader>1 <Plug>BufTabLine.Go(1)                                                                                                                                                
+nnoremap <leader>v1 :Ve<CR> <Plug>BufTabLine.Go(1)                                                                                                                                       
+nnoremap <leader>2 <Plug>BufTabLine.Go(2)                                                                                                                                                
+nnoremap <leader>v2 :Ve<CR> <Plug>BufTabLine.Go(2)                                                                                                                                       
+nnoremap <leader>3 <Plug>BufTabLine.Go(3)                                                                                                                                                
+nnoremap <leader>v3 :Ve<CR> <Plug>BufTabLine.Go(3)                                                                                                                                       
+nnoremap <leader>4 <Plug>BufTabLine.Go(4)                                                                                                                                                
+nnoremap <leader>v4 :Ve<CR> <Plug>BufTabLine.Go(4)                                                                                                                                       
+nnoremap <leader>5 <Plug>BufTabLine.Go(5)                                                                                                                                                
+nnoremap <leader>v5 :Ve<CR> <Plug>BufTabLine.Go(5)                                                                                                                                       
+nnoremap <leader>6 <Plug>BufTabLine.Go(6)                                                                                                                                                
+nnoremap <leader>v6 :Ve<CR> <Plug>BufTabLine.Go(6)                                                                                                                                       
+nnoremap <leader>7 <Plug>BufTabLine.Go(7)                                                                                                                                                
+nnoremap <leader>v7 :Ve<CR> <Plug>BufTabLine.Go(7)                                                                                                                                       
+nnoremap <leader>8 <Plug>BufTabLine.Go(7)                                                                                                                                                
+nnoremap <leader>v8 :Ve<CR> <Plug>BufTabLine.Go(8)                                                                                                                                       
+nnoremap <leader>9 <Plug>BufTabLine.Go(8)                                                                                                                                                
+nnoremap <leader>v9 :Ve<CR> <Plug>BufTabLine.Go(8)  
 
 " vimdiff
 " git config --global diff.tool vimdiff
