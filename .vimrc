@@ -98,7 +98,7 @@ nnoremap <leader>b :set list number relativenumber<CR> " b for 'back'. Goes back
 nnoremap <leader>- 10<C-w>< " decrease window size
 nnoremap <leader>= 10<C-w>> " increase window size 
 nnoremap <leader>h- 10<C-w>< " decrease horizontal window size
-nnoremap <leaderh= 10<C-w>> " increase horizonal window size 
+nnoremap <leader>h= 10<C-w>> " increase horizonal window size 
 nnoremap <leader>r :source ~/.vimrc<CR> " r for 'reload' or 'rcmap <leader>L :diffg L<CR> " L for 'LOCAL'
 nnoremap <leader>R :diffg R<CR> " R for 'REMOTE'
 nnoremap <leader>C :wqa <CR> " C for 'close'
@@ -109,6 +109,8 @@ nnoremap <leader>s :Ack --ignore-file=match:.js  " s for 'search' will ignore bu
 nnoremap <leader>p "+p " pc for 'paste clipboard'
 vnoremap <leader>pr "0p " pr for 'paste recent'
 nnoremap <leader>nc :/<<<<<<< HEAD<CR> " nc for 'next conflict' 
+
+nnoremap <C-t> <Nop> " binding for switching tabs in gnome terminal
 
 " Go to buffer in *position* X, not go to buffer X                                                                                                                                       
 nnoremap <leader>1 <Plug>BufTabLine.Go(1)                                                                                                                                                
