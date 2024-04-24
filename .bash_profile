@@ -15,6 +15,7 @@ alias chm='git checkout master && git pull origin master'
 alias push='git push origin $(git branch | grep \* | cut -d " " -f2)'
 alias pull='git pull origin $(git branch | grep \* | cut -d " " -f2)'
 alias discard='git checkout -- . && git checkout -- ..'
+alias sm='sudo mongod --fork --logpath /var/log/mongod.log' # start mongo
 
 
 localbin="/usr/local/bin"
