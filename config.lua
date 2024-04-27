@@ -9,3 +9,5 @@ lvim.keys.normal_mode["<leader>-"] = ":vertical resize -2<CR>"
 lvim.keys.normal_mode["<leader>+"] = ":resize +2<CR>"
 lvim.keys.normal_mode["<leader>_"] = ":resize -2<CR>"
 lvim.keys.normal_mode["<tab>"] = ":bn<CR>"
+
+vim.opt.relativenumber = true
