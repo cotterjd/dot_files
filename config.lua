@@ -9,5 +9,6 @@ lvim.keys.normal_mode["<leader>-"] = ":vertical resize -2<CR>"
 lvim.keys.normal_mode["<leader>+"] = ":resize +2<CR>"
 lvim.keys.normal_mode["<leader>_"] = ":resize -2<CR>"
 lvim.keys.normal_mode["<tab>"] = ":bn<CR>"
+lvim.keys.normal_mode["<leader>p"] = "\"+p" -- past from clipboard
 
 vim.opt.relativenumber = true
