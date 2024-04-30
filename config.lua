@@ -12,3 +12,8 @@ lvim.keys.normal_mode["<tab>"] = ":bn<CR>"
 lvim.keys.normal_mode["<leader>p"] = "\"+p" -- past from clipboard
 
 vim.opt.relativenumber = true
+vim.opt.foldmethod = "indent"
+
+lvim.plugins = {
+  { "github/copilot.vim" },
+}
