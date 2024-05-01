@@ -12,6 +12,8 @@ lvim.keys.normal_mode["<tab>"] = ":bn<CR>"
 lvim.keys.normal_mode["<leader>p"] = "\"+p" -- past from clipboard
 lvim.keys.normal_mode["<leader>v"] = ":vsp<CR>"
 lvim.keys.normal_mode["<leader>h"] = ":sp<CR>"
+lvim.keys.normal_mode["<leader>rn"] = ":set relativenumber<CR>" -- relativenumber is set by default (see below). this is to be used with the explorer
+
 
 vim.opt.relativenumber = true
 vim.opt.foldmethod = "indent"
