@@ -4,10 +4,10 @@
 -- Forum: https://www.reddit.com/r/lunarvim/
 -- Discord: https://discord.com/invite/Xb9B4Ny
 
-lvim.keys.normal_mode["<leader>="] = ":vertical resize +2<CR>" -- +
-lvim.keys.normal_mode["<leader>-"] = ":vertical resize -2<CR>" -- -
-lvim.keys.normal_mode["<leader>+"] = ":resize +2<CR>" -- shift +
-lvim.keys.normal_mode["<leader>_"] = ":resize -2<CR>" -- shift -
+lvim.keys.normal_mode["<leader>="] = ":vertical resize +5<CR>" -- +
+lvim.keys.normal_mode["<leader>-"] = ":vertical resize -5<CR>" -- -
+lvim.keys.normal_mode["<leader>+"] = ":resize +5<CR>" -- shift +
+lvim.keys.normal_mode["<leader>_"] = ":resize -5<CR>" -- shift -
 lvim.keys.normal_mode["<tab>"] = ":bn<CR>"
 lvim.keys.normal_mode["<leader>p"] = "\"+p" -- past from clipboard
 lvim.keys.normal_mode["<leader>v"] = ":vsp<CR>" -- v for vertical
@@ -20,4 +20,10 @@ vim.opt.foldmethod = "indent"
 
 lvim.plugins = {
   { "github/copilot.vim" },
+  {
+    "ray-x/lsp_signature.nvim", -- show signature when using function
+    event = "VeryLazy",
+    opts = {},
+    config = function(_, opts) require'lsp_signature'.setup(opts) end
+  }
 }
