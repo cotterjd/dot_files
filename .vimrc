@@ -153,3 +153,4 @@ nnoremap <leader>v9 :Ve<CR> <Plug>BufTabLine.Go(8)
 " git@github.com:gcmt/taboo.vim.git TabooOpen <tabname>
 " git@github.com:prettier/vim-prettier.git 
 " git@github.com/ap/vim-buftabline opens buffers in tabs automatically. Can just use standard buffer commands with it. :b3 to got to buffer 3, :db3 to delete buffer 3, :bn and :bp to navigate tabs
+" git@github.com:tpope/vim-commentary.git :22Commentary (comments out line 22)
