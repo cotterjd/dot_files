@@ -40,7 +40,7 @@ alias disable-prettier='mv ~/.vim/pack/plugins/start/vim-prettier ~/.vim/'
 alias cont='git rebase --continue'
 alias testone='./node_modules/.bin/vitest -t'
 alias sm='sudo mongod --fork --logpath /var/log/mongod.log'
-
+alias lg='lazygit'
 alias nvim-lazy="NVIM_APPNAME=LazyVim nvim"
 alias nvim-kick="NVIM_APPNAME=kickstart nvim"
 alias nvim-chad="NVIM_APPNAME=NvChad nvim"
