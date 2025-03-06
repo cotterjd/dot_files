@@ -16,6 +16,7 @@ alias t=tmuxinator
 alias tn='tmuxinator nutiliti'
 alias tn2='tmuxinator nutiliti2'
 alias bcore='pnpm build --filter=@nutiliti/core'
+alias bcore='pnpm build --filter=@nutiliti/model'
 alias brr='pnpm build --filter=@nutiliti/rent-roll'
 alias push='git push origin $(git branch | grep \* | cut -d " " -f2)'
 alias fpush='git push origin +$(git branch | grep \* | cut -d " " -f2)'
